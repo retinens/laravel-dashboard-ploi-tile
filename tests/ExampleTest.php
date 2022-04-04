@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MyTile\Tests;
+namespace Retinens\PloiTile\Tests;
 
 use PHPUnit\Framework\TestCase;
 

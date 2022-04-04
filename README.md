@@ -3,9 +3,9 @@
 
 # A short description of the tile
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/:vendor/:package_name/run-tests?label=tests)](https://github.com/:vendor/:package_name/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/retinens/laravel-dashboard-ploi-tile.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-dashboard-ploi-tile)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/retinens/laravel-dashboard-ploi-tile/run-tests?label=tests)](https://github.com/retinens/laravel-dashboard-ploi-tile/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/retinens/laravel-dashboard-ploi-tile.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-dashboard-ploi-tile)
 
 A friendly explanation of what your tile does.
 
@@ -24,16 +24,16 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require :vendor/:package_name
+composer require retinens/laravel-dashboard-ploi-tile
 ```
 
 ## Usage
 
-In your dashboard view you use the `livewire:my-tile` component.
+In your dashboard view you use the `livewire:ploi-tile` component.
 
 ```html
 <x-dashboard>
-    <livewire:my-tile position="e7:e16" />
+    <livewire:ploi-tile position="e7:e16" />
 </x-dashboard>
 ```
 

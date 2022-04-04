@@ -1,10 +1,10 @@
 <?php
 
-namespace Vendor\MyTile;
+namespace Retinens\PloiTile;
 
 use Spatie\Dashboard\Models\Tile;
 
-class MyStore
+class PloiStore
 {
     private Tile $tile;
 
@@ -15,7 +15,7 @@ class MyStore
 
     public function __construct()
     {
-        $this->tile = Tile::firstOrCreateForName("myTileName");
+        $this->tile = Tile::firstOrCreateForName("ploi-tile");
     }
 
     public function setData(array $data): self
@@ -29,4 +29,17 @@ class MyStore
     {
         return$this->tile->getData('key') ?? [];
     }
+
+    public function setServers(array $servers): self
+    {
+        $this->tile->putData('servers', $servers);
+
+        return $this;
+    }
+
+    public function servers()
+    {
+        return $this->tile->getData('servers') ?? [];
+    }
+
 }

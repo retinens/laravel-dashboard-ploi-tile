@@ -1,22 +1,25 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "retinens/laravel-dashboard-ploi-tile",
     "description": ":package_description",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "retinens",
+        "laravel-dashboard-ploi-tile",
+        "ploi-tile",
+        "ploi.io"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/retinens/laravel-dashboard-ploi-tile",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://:vendor.be",
+            "name": "Lucas Houssa",
+            "email": "lucas@retinens.com",
+            "homepage": "https://retinens.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0|^7.4",
+        "ploi/ploi-php-sdk": "^1.8",
         "spatie/laravel-dashboard": "^2.0"
     },
     "require-dev": {
@@ -24,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\MyTile\\": "src"
+            "Retinens\\PloiTile\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\MyTile\\Tests\\": "tests"
+            "Retinens\\PloiTile\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MyTile\\MyTileServiceProvider"
+                "Retinens\\PloiTile\\PloiTileServiceProvider"
             ]
         }
     },
